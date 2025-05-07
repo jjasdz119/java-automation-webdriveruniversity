@@ -1,7 +1,6 @@
 package com.webdriveruniversity.automations.ui.tests;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.SelenideElement;
 import com.webdriveruniversity.automations.ui.common.BrowserManager;
 import com.webdriveruniversity.automations.ui.pages.SelectionControlPage;
 import org.junit.jupiter.api.Assertions;
@@ -32,26 +31,12 @@ public class SelectionControlTest {
     @Test
     @DisplayName("드롭다운 메뉴 선택 테스트")
     void testSelectDropdownValue() {
-//        String selectedValueOnDropdown1 = "SQL";
-//        String selectedValueOnDropdown2 = "TestNG";
-//        String selectedValueOnDropdown3 = "JavaScript";
-//
-//        SelectionControlPage.Actions.selectAndVerifyDropdown(selectedValueOnDropdown1);
-//        SelectionControlPage.Actions.selectAndVerifyDropdown(selectedValueOnDropdown2);
-//        SelectionControlPage.Actions.selectAndVerifyDropdown(selectedValueOnDropdown3);
-        System.out.println("hello");
+        String selectedValueOnDropdown1 = "SQL";
+        String selectedValueOnDropdown2 = "TestNG";
+        String selectedValueOnDropdown3 = "JavaScript";
 
-//        SelectionControlPage.dropdownMenu1().click();
-//        SelectionControlPage.dropdownMenu1().selectOption(selectedValueOnDropdown1);
-//        SelectionControlPage.dropdownMenu2().click();
-//        SelectionControlPage.dropdownMenu2().selectOption(selectedValueOnDropdown2);
-//        SelectionControlPage.dropdownMenu3().click();
-//        SelectionControlPage.dropdownMenu3().selectOption(selectedValueOnDropdown3);
-//        Assertions.assertTrue(SelectionControlPage.dropdownMenu1()
-//                .shouldBe(Condition.innerText(selectedValueOnDropdown1)).exists());
-//        Assertions.assertTrue(SelectionControlPage.dropdownMenu2()
-//                .shouldBe(Condition.innerText(selectedValueOnDropdown2)).exists());
-//        Assertions.assertTrue(SelectionControlPage.dropdownMenu3()
-//                .shouldBe(Condition.innerText(selectedValueOnDropdown3)).exists());
+        SelectionControlPage.Actions.selectAndVerifyDropdown(selectedValueOnDropdown1);
+        SelectionControlPage.Actions.selectAndVerifyDropdown(selectedValueOnDropdown2);
+        SelectionControlPage.Actions.selectAndVerifyDropdown(selectedValueOnDropdown3);
     }
 }
