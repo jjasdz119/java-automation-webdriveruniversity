@@ -1,0 +1,40 @@
+pages:
+  base.page: "https://webdriveruniversity.com/"
+  contact.page: "https://webdriveruniversity.com/Contact-Us/contactus.html"
+  login.page: "https://webdriveruniversity.com/Login-Portal/index.html"
+  buttonClick.page: "https://webdriveruniversity.com/Click-Buttons/index.html"
+  toDoList.page: "https://webdriveruniversity.com/To-Do-List/index.html"
+  accordion.page: "https://webdriveruniversity.com/Accordion/index.html"
+  selectionControls.page: "https://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html"
+
+validData:
+  firstName: "door"
+  lastName: "top"
+  email: "asdz119@naver.com"
+  comments: "this is comments"
+
+invalidEmails:
+  - "12345"
+  - "@naver.com"
+  - "asdz119@.com"
+  - "asdz119@naver."
+  - "' asdz119@naver.com'"
+  - "'asdz119@naver.com '"
+
+invalidData:
+  - firstName: null
+    lastName: "top"
+    email: "asdz119@naver.com"
+    comments: "this is comments"
+  - firstName: "door"
+    lastName: null
+    email: "asdz119@naver.com"
+    comments: "this is comments"
+  - firstName: "door"
+    lastName: "top"
+    email: null
+    comments: "this is comments"
+  - firstName: "door"
+    lastName: "top"
+    email: "asdz119@naver.com"
+    comments: null
