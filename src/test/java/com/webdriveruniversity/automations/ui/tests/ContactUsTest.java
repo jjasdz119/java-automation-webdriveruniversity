@@ -31,7 +31,7 @@ public class ContactUsTest {
     void testClickContactUs() {
         MainPage.CONTACT_US.click();
         BrowserManager.switchToNewTab();
-        assertTrue(ContactUsPage.TITLE.shouldBe(Condition.visible).exists());
+        assertTrue(ContactUsPage.PAGE_TITLE.shouldBe(Condition.visible).exists());
     }
 
     @Test
