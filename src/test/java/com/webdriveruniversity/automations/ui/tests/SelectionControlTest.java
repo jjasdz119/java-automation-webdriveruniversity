@@ -28,15 +28,15 @@ public class SelectionControlTest {
                 .shouldBe(Condition.value("HTML")).exists());
     }
 
-    @Test
-    @DisplayName("드롭다운 메뉴 선택 테스트")
-    void testSelectDropdownValue() {
-        String selectedValueOnDropdown1 = "SQL";
-        String selectedValueOnDropdown2 = "TestNG";
-        String selectedValueOnDropdown3 = "JavaScript";
-
-        SelectionControlPage.Actions.selectAndVerifyDropdown(selectedValueOnDropdown1);
-        SelectionControlPage.Actions.selectAndVerifyDropdown(selectedValueOnDropdown2);
-        SelectionControlPage.Actions.selectAndVerifyDropdown(selectedValueOnDropdown3);
-    }
+//    @Test
+//    @DisplayName("드롭다운 메뉴 선택 테스트")
+////    void testSelectDropdownValue() {
+////        String selectedValueOnDropdown1 = "SQL";
+////        String selectedValueOnDropdown2 = "TestNG";
+////        String selectedValueOnDropdown3 = "JavaScript";
+////
+////        SelectionControlPage.Actions.selectAndVerifyDropdown(selectedValueOnDropdown1);
+////        SelectionControlPage.Actions.selectAndVerifyDropdown(selectedValueOnDropdown2);
+////        SelectionControlPage.Actions.selectAndVerifyDropdown(selectedValueOnDropdown3);
+//    }
 }

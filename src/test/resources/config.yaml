@@ -6,6 +6,7 @@ pages:
   toDoList.page: "https://webdriveruniversity.com/To-Do-List/index.html"
   accordion.page: "https://webdriveruniversity.com/Accordion/index.html"
   selectionControls.page: "https://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html"
+  pageObjectModelPage: https://webdriveruniversity.com/Page-Object-Model/
 
 validData:
   firstName: "door"
