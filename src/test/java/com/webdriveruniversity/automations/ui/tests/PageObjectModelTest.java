@@ -15,7 +15,7 @@ public class PageObjectModelTest {
 
     @BeforeEach
     void setUp() {
-        open(BrowserManager.getUrl("pageObjectModelPage"));
+        open(BrowserManager.getUrl("pageObjectModel.Page"));
     }
 
     @Test
