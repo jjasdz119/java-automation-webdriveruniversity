@@ -19,18 +19,18 @@ public class PageObjectModelTest {
     }
 
     @Test
+    @DisplayName("Home 탭 테스트")
+    void testAccessHomeTab() {
+        PageObjectModelPage.homeTab().click();
+        PageObjectModelPage.whoAreWeTitle().shouldBe(visible);
+    }
+
+    @Test
     @DisplayName("히어로 배너 테스트")
     void testHeroBanner() {
         PageObjectModelPage.heroBanner1().exists();
         PageObjectModelPage.heroBanner2().exists();
         PageObjectModelPage.heroBanner3().exists();
-    }
-
-    @Test
-    @DisplayName("Home 탭 테스트")
-    void testAccessHomeTab() {
-        PageObjectModelPage.homeTab().click();
-        PageObjectModelPage.whoAreWeTitle().shouldBe(visible);
     }
 
     @Test
@@ -41,7 +41,7 @@ public class PageObjectModelTest {
     }
 
     @Test
-    @DisplayName("Our Products 탭 접근 테스트")
+    @DisplayName("Our Products 탭 테스트")
     void testAccessOurProductsTab() {
         PageObjectModelPage.ourProductsTab().click();
         PageObjectModelPage.titleSpecialOffers().shouldBe(visible);
