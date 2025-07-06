@@ -7,6 +7,7 @@ pages:
   accordion.page: "https://webdriveruniversity.com/Accordion/index.html"
   formControls.page: "https://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html"
   pageObjectModel.Page: "https://webdriveruniversity.com/Page-Object-Model/"
+  ajaxLoader.page: "https://webdriveruniversity.com/Ajax-Loader/index.html"
 
 validData:
   firstName: "door"
