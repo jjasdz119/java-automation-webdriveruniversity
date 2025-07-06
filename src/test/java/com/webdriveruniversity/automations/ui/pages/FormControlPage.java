@@ -14,6 +14,11 @@ public class FormControlPage {
     public static final SelenideElement DROPDOWN_MENU_1 = $x("//select[@id='dropdowm-menu-1']");
     public static final SelenideElement DROPDOWN_MENU_2 = $x("//select[@id='dropdowm-menu-2']");
     public static final SelenideElement DROPDOWN_MENU_3 = $x("//select[@id='dropdowm-menu-3']");
+    public static final SelenideElement CHECKBOX_OPTION_ONE = $x("//input[@value='option-1']");
+    public static final SelenideElement CHECKBOX_OPTION_FOUR = $x("//input[@value='option-4']");
+    public static final SelenideElement VEGETABLE_RADIO_BUTTON_TWO = $x("(//input[@type='radio'][@name='vegetable'])[2]");
+    public static final SelenideElement VEGETABLE_DROPDOWN = $x("//select[@id='fruit-selects']");
+
 
 
     public static SelenideElement dropdownMenu1() {
@@ -26,6 +31,22 @@ public class FormControlPage {
 
     public static SelenideElement dropdownMenu3() {
         return $(DROPDOWN_MENU_3).shouldBe(Condition.visible);
+    }
+
+    public static SelenideElement checkBoxOptionOne() {
+        return $(CHECKBOX_OPTION_ONE).shouldBe(Condition.visible);
+    }
+
+    public static SelenideElement checkBoxOptionFour() {
+        return $(CHECKBOX_OPTION_FOUR).shouldBe(Condition.visible);
+    }
+
+    public static SelenideElement vegetableRadioButtonTwo() {
+        return $(VEGETABLE_RADIO_BUTTON_TWO).shouldBe(Condition.visible);
+    }
+
+    public static SelenideElement vegetableDropdown() {
+        return $(VEGETABLE_DROPDOWN).shouldBe(Condition.visible);
     }
 
     public static class Actions {

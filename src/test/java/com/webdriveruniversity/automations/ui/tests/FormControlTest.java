@@ -9,7 +9,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 public class FormControlTest {
@@ -41,5 +40,22 @@ public class FormControlTest {
         FormControlPage.Actions.selectDropdownOptionAndCheck(dropdown3, "JavaScript");
 
         // 드롭다운 선택으로 UI 변화가 일어나는 경우 Assertion으로 검증할 것
+    }
+
+    @Test
+    @DisplayName("체크박스 선택 테스트")
+    void testSelectCheckbox() {
+        FormControlPage.checkBoxOptionOne().click();
+        FormControlPage.checkBoxOptionFour().click();
+
+        // Elements에서 selected, unselect 속성으로 구분하지 않는 경우 어떻게 식별할지 찾아볼 것
+    }
+
+    @Test
+    @DisplayName("비활성화된 라디오버튼, 체크박스 확인 테스트")
+    void testDisableButtonAndCheckBox() {
+        FormControlPage.vegetableRadioButtonTwo().shouldBe(Condition.disabled);
+        FormControlPage.vegetableDropdown().find("option", 0).shouldBe(Condition.enabled);
+        FormControlPage.vegetableDropdown().find("option", 1).shouldBe(Condition.disabled);
     }
 }
