@@ -8,6 +8,7 @@ pages:
   formControls.page: "https://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html"
   pageObjectModel.Page: "https://webdriveruniversity.com/Page-Object-Model/"
   ajaxLoader.page: "https://webdriveruniversity.com/Ajax-Loader/index.html"
+  actions.page: "https://webdriveruniversity.com/Actions/index.html#"
 
 validData:
   firstName: "door"
